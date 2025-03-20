@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="nature">Nature</button>
+            <button data-filter="technology">Technology</button>
+            <button data-filter="food">Food</button>
+        </div>
+        <div class="gallery">
+            <div class="image" data-category="nature">
+                <img src="assets/nature.jpg" alt="river">
+            </div>
+            <div class="image" data-category="technology">
+                <img src="assets/apple.jpg" alt="iphone">
+            </div>
+            <div class="image" data-category="food">
+                <img src="assets/burger.jpeg" alt="burger">
+            </div>
+            <div class="image" data-category="nature">
+                <img src="assets/forest.jpeg" alt="Forest">
+            </div>
+            <div class="image" data-category="technology">
+                <img src="assets/reactor.jpg" alt="reactor">
+            </div>
+            <div class="image" data-category="nature">
+                <img src="assets/beach.jpeg" alt="Beach">
+            </div>
+            <div class="image" data-category="technology">
+                <img src="assets/setup.jpg" alt="Setup">
+            </div>
+            <div class="image" data-category="food">
+                <img src="assets/pasta.jpg" alt="pasta">
+            </div>
+            <div class="image" data-category="nature">
+                <img src="assets/jungle.jpg" alt="Forest">
+            </div>
+            <div class="image" data-category="food">
+                <img src="assets/hotdog.jpg" alt="HotDog">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
