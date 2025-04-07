@@ -1,0 +1,148 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Std', 'Arial', sans-serif;
+}
+
+body {
+    background: url('img/fondo.png') ; /* Imagen de fondo */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+nav ul {
+    display: flex; /* Mostrar el menú horizontalmente por defecto */
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-btn {
+    display: none; /* Ocultar el botón del menú por defecto */
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        border-radius: 10px;
+    }
+
+    nav ul.active {
+        display: flex; /* Mostrar el menú cuando se activa */
+    }
+
+    .menu-btn {
+        display: block; /* Mostrar el botón del menú en pantallas pequeñas */
+    }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1DB954; /* Verde Spotify */
+}
+
+nav a.login {
+    background: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a.login:hover {
+    background: #1DB954;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    color: white;
+    margin-top: 70px; /* Para compensar la barra de navegación fija */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #1DB954;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover {
+    background: #1aa34a;
+    transform: scale(1.05);
+}
+
+.hero a {
+    background: #1DB954;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Eliminar el subrayado */
+}
+
+.hero a:hover {
+    background: #1aa34a;
+    transform: scale(1.05);
+}

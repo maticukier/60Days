@@ -36,7 +36,6 @@ function generatePassword() {
     passwordEl.value = password;
 }
 
-// Copy password to clipboard
 function copyPassword() {
     passwordEl.select();
     document.execCommand('copy');
