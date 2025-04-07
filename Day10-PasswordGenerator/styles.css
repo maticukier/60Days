@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Azul degradado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.password-display {
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#password {
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: bold;
+}
+
+#copyBtn {
+    padding: 0 20px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+#copyBtn:hover {
+    background: #1e3c72;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 60%;
+    accent-color: #2a5298;
+}
+
+#generateBtn {
+    background: #2a5298;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#generateBtn:hover {
+    background: #1e3c72;
+    transform: scale(1.05);
+}
+
+#generateBtn:active {
+    transform: scale(0.95);
+}
+
+input[type="checkbox"] {
+    accent-color: #2a5298;
+}
+
+label {
+    font-size: 1rem;
+    color: #fff;
+}
