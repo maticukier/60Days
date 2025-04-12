@@ -61,11 +61,11 @@ nav ul {
     }
 
     nav ul.active {
-        display: flex; /* Mostrar el menú cuando se activa */
+        display: flex; 
     }
 
     .menu-btn {
-        display: block; /* Mostrar el botón del menú en pantallas pequeñas */
+        display: block; 
     }
 }
 
@@ -77,7 +77,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1DB954; /* Verde Spotify */
+    color: #1DB954; 
 }
 
 nav a.login {
@@ -98,7 +98,7 @@ nav a.login:hover {
     text-align: center;
     padding: 150px 20px;
     color: white;
-    margin-top: 70px; /* Para compensar la barra de navegación fija */
+    margin-top: 70px; 
 }
 
 .hero h1 {
@@ -139,7 +139,7 @@ nav a.login:hover {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
-    text-decoration: none; /* Eliminar el subrayado */
+    text-decoration: none; 
 }
 
 .hero a:hover {

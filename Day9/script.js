@@ -35,5 +35,4 @@ function prevSlide() {
     showSlide(currentIndex - 1);
 }
 
-// Initialize the carousel
 showSlide(currentIndex);

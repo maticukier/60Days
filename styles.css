@@ -1,0 +1,87 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+}
+
+body {
+    background: #f4f4f9; /* Fondo claro y limpio */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #cb0afc, #00f2fe); /* Degradado azul moderno */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra para destacar el texto */
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.day-card {
+    background: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.day-card a {
+    text-decoration: none;
+    color: #007bff; /* Azul moderno */
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.day-card a:hover {
+    color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.day-card p {
+    color: #555; /* Texto gris oscuro */
+    margin-bottom: 15px;
+}
+
+.day-card .icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #9900ff; /* Azul degradado */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .days-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url(../img/fondo.png); /* Fondo negro */
+    background: url(../img/fondo.png); 
     color: white;
     min-height: 100vh;
     display: flex;
@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.9); /* Fondo negro con opacidad */
+    background: rgba(0, 0, 0, 0.9); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -28,7 +28,7 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1DB954; /* Verde Spotify */
+    color: #1DB954; 
 }
 
 form {
@@ -41,9 +41,9 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
     padding: 10px;
-    border: 1px solid #1DB954; /* Borde verde */
+    border: 1px solid #1DB954;
     border-radius: 5px;
-    background: #181818; /* Fondo gris oscuro */
+    background: #181818; 
     color: white;
     font-size: 1rem;
 }
@@ -52,7 +52,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #1aa34a; /* Verde más claro al enfocar */
+    border-color: #1aa34a;
 }
 
 button {

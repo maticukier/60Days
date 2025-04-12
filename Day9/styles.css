@@ -64,8 +64,8 @@ h1 {
 
 .carousel-item img {
     width: 100%;
-    height: 500px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    height: 500px; 
+    object-fit: cover; 
     display: block;
 }
 

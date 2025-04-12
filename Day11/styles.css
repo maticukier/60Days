@@ -7,12 +7,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #6d6d6d, #3c3c3c); /* Gradiente gris refinado */
+    background: linear-gradient(135deg, #6d6d6d, #3c3c3c); 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #ffffff; /* Cambia el texto a un gris oscuro para mejor contraste */
+    color: #ffffff; 
 }
 .container {
     background: rgba(203, 64, 171, 0.1);

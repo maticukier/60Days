@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="movieAppBtn"> 🎬 Movie App</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search movies...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="trending" id="trendingSection">
+            <h2>Trending Movies</h2>
+            <div class="movies-container" id="trendingMovies"></div>
+        </section>
+
+        <section class="search-results" id="searchResultsSection">
+            <h2>Search Results</h2>
+            <div class="movies-container" id="searchResults"></div>
+        </section>
+    </main>
+
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
